@@ -38,7 +38,7 @@ export default function Landing() {
   return (
     <Container fluid>
       <Row style={{ margin: 0, padding: 0, backgroundColor: "" }}>
-        <Col style={{ backgroundColor: "#bcc9cf", textAlign: 'center', paddingTop: '15%' }}>
+        <Col style={{ backgroundColor: "#bcc9cf", textAlign: 'center', paddingTop: '9%' }}>
           <h1 style={{ fontWeight: 'bold', fontFamily: 'MozBorderImage', fontSize: '65px' }}>Calm Your Brain, <br />Ease the Strain..</h1>
           <br />
           {/* User Login Input Field */}

@@ -41,10 +41,10 @@ export default function NewRegistration() {
   return (
     <Container fluid>
       <Row style={{ margin: 0, padding: 0, backgroundColor: "" }}>
-        <Col style={{ backgroundColor: "#bcc9cf", textAlign: 'center', paddingTop: '20%' }}>
+        <Col style={{ backgroundColor: "#bcc9cf", textAlign: 'center', padding: '5% 5%' }}>
           <h1 style={{ fontWeight: 'bold', fontFamily: 'MozBorderImage', fontSize: '65px' }}>Register</h1>
           <br />
-          <Col md="6" style={{ textAlign: 'center', marginLeft: '165px' }}>
+          <Col md="6" style={{ textAlign: 'center', marginLeft: '165px',paddingBottom:'20%' }}>
             <form onSubmit={handleSubmit}>
               <div>
                 <input
@@ -63,22 +63,7 @@ export default function NewRegistration() {
                     boxSizing: 'border-box',
                   }}
                 />
-                <input
-                  type="password"
-                  name="password"
-                  placeholder="Password"
-                  value={formData.password}
-                  onChange={handleInputChange}
-                  style={{
-                    padding: '10px',
-                    fontSize: '16px',
-                    width: '100%',
-                    border: '1px solid #ccc',
-                    borderRadius: '5px',
-                    marginBottom: '10px',
-                    boxSizing: 'border-box',
-                  }}
-                />
+
                 <input
                   type="email"
                   name="email"
@@ -95,6 +80,24 @@ export default function NewRegistration() {
                     boxSizing: 'border-box',
                   }}
                 />
+
+                <input
+                  type="password"
+                  name="password"
+                  placeholder="Password"
+                  value={formData.password}
+                  onChange={handleInputChange}
+                  style={{
+                    padding: '10px',
+                    fontSize: '16px',
+                    width: '100%',
+                    border: '1px solid #ccc',
+                    borderRadius: '5px',
+                    marginBottom: '10px',
+                    boxSizing: 'border-box',
+                  }}
+                />
+
                 <button
                   type="submit"
                   style={{
@@ -109,7 +112,7 @@ export default function NewRegistration() {
                 >
                   Register
                 </button>
-                <p>Already a User<a href="/">Sign-in</a></p>
+                <p>Already a User? <a href="/"> Sign-in</a></p>
               </div>
             </form>
           </Col>
