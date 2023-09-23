@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
 import y from "../assets/yg.jpg";
+import axios from "axios"; // Import Axios
 
 export default function Landing() {
   const [username, setUsername] = useState("");
@@ -13,17 +14,17 @@ export default function Landing() {
       password,
     };
 
-    // Make an HTTP POST request to your backend API
+    // Make an HTTP POST request to your backend API using Axios
     try {
-      const response = await fetch("/api/login", {
-        method: "POST",
+      const response = await axios.post("http://localhost:5000/api/login", data, {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(data),
       });
 
-      if (response.ok) {
+      console.log(response);
+
+      if (response.status === 200) {
         // Handle a successful login here (e.g., redirect the user)
         console.log("Login successful!");
       } else {
