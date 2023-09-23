@@ -12,7 +12,7 @@ function NavigationOuter() {
           <img src={d}  height={120}  alt='image not found' />
 
           </Navbar.Brand>
-          <Nav className="me-auto">
+          <Nav className="meauto">
             <Nav.Link href="#home" style={{ color: 'black', fontSize: '16px' }}>Home</Nav.Link>
             <Nav.Link href="#features" style={{ color: 'black', fontSize: '16px' }}>Features</Nav.Link>
             <Nav.Link href="#pricing" style={{ color: 'black', fontSize: '16px' }}>Pricing</Nav.Link>
