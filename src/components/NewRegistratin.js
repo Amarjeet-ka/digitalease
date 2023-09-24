@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import w from '../assets/wl.jpeg'
+
 
 export default function NewRegistration() {
   const [formData, setFormData] = useState({
@@ -144,7 +146,9 @@ export default function NewRegistration() {
             </form>
           </Col>
         </Col>
-        <Col>{/* Add an image or other content */}</Col>
+        <Col>
+          <img src={w} alt="not found" height={720} width="100%" />
+        </Col>
       </Row>
     </Container>
   );

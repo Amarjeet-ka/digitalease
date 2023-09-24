@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import PageButton from '../components/PageButton'
 
 export default function Corepage() {
   return (
-    <div>Corepage</div>
+    <Fragment>
+        <PageButton/>
+    </Fragment>
   )
 }
